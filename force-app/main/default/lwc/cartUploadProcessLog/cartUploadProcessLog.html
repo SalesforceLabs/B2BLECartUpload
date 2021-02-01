@@ -1,0 +1,21 @@
+<!-- 
+ * Copyright (c) 2021, salesforce.com, inc.
+ * All rights reserved.
+ * SPDX-License-Identifier: BSD-3-Clause
+ * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+-->
+<template>
+
+    <template if:true={showProcessLog}>
+
+        <div class="slds-form-element__label"></div>
+
+        <lightning-card title="Processing Log">
+
+            <lightning-formatted-rich-text value={richtext}></lightning-formatted-rich-text>
+
+        </lightning-card>
+
+    </template>
+
+</template>

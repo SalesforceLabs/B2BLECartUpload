@@ -1,0 +1,165 @@
+<!-- 
+ * Copyright (c) 2021, salesforce.com, inc.
+ * All rights reserved.
+ * SPDX-License-Identifier: BSD-3-Clause
+ * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+-->
+<template>
+
+    <template if:true={showLoadingSpinner}>
+        <lightning-spinner alternative-text={label.pleaseWait} size="medium"></lightning-spinner>
+    </template>
+
+    <lightning-accordion active-section-name="main" allow-multiple-sections-open>
+
+        <lightning-accordion-section name="main" label={componentTitle}>
+
+            <div style="margin-left:4%">
+
+                <div class="slds-grid slds-p-bottom_medium">
+
+                    <div class="slds-col slds-size_2-of-12">
+                        <lightning-radio-group name="inputSelectionGroup" label={label.selectInputType}
+                            options={options} value={inputSelection} type="radio" onchange={handleInputSelectionChange}>
+                        </lightning-radio-group>
+                    </div>
+
+                    <div class="slds-col slds-size_2-of-12">
+
+                        <!-- <ul>
+
+                            <li>
+                                <lightning-input name="headerRowCheckbox" label={label.includesHeaderRow}
+                                    data-id="header-row-checkbox" type="checkbox" checked={hasHeaderRow}
+                                    onchange={handleHeaderRowSelectionChange}></lightning-input>
+                            </li>
+
+                            <li>
+                                <lightning-input name="ignoreInvalidSkus" label={label.ignoreInvalidSkusCheckbox}
+                                    data-id="invalid-skus-checkbox" type="checkbox" checked={ignoreInvalidSkus}
+                                    onchange={handleIgnoreInvalidSkusChange}></lightning-input>
+                            </li>
+
+                            <template if:true={showEmailResultsCheckbox}>
+                                <li>
+                                    <lightning-input name="emailResultsCheckbox" label={label.emailResultsCheckbox}
+                                        data-id="email-results-checkbox" type="checkbox" checked={emailResults}
+                                        onchange={handleEmailResultsChange}></lightning-input>
+                                </li>
+                            </template>
+
+                        </ul>
+
+                        <br/> -->
+
+                        <lightning-checkbox-group name="Checkbox Group" 
+                            data-id="processing-options-checkbox"
+                            label={label.processingOptions}
+                            options={processingOptions}
+                            value={selectedProcessingValues}
+                            onchange={handleProcessingOptionsChange}></lightning-checkbox-group>
+
+                    </div>
+
+                    <div class="slds-col"></div>
+
+                    <div class="slds-col slds-size_1-of-12" style="text-align: right;">
+                        <template if:true={hasContent}>
+                            <lightning-button-icon icon-name="utility:help" alternative-text={label.showHelpDialog}
+                                title={label.showHelpDialog} onclick={handleShowHelpDialog}>
+                            </lightning-button-icon>
+                            <c-cart-upload-help-dialog is-open={isShowHelp} content-id={contentId}
+                                content-type={contentType} onclosehelpdialog={handleCloseHelpDialog}>
+                            </c-cart-upload-help-dialog>
+                        </template>
+                    </div>
+
+                </div>
+
+                <template if:true={isCsvSelected}>
+
+                    <div class="slds-grid slds-p-bottom_medium">
+
+                        <div class="slds-col slds-size_6-of-12">
+
+                            <div>
+                                <lightning-input label={label.selectFiles} name="file uploader"
+                                    onchange={handleFilesChange} type="file" accept={acceptedFormats}></lightning-input>
+                            </div>
+
+                            <br />
+
+                            <template if:true={isFileSelected}>
+                                <div>
+                                    <div class="slds-text-heading_medium">{label.filesSelected}</div>
+                                    <ul>
+                                        <template for:each={filesUploaded} for:item="file" for:index="index">
+                                            <li key={file.Name}>{file.name}</li>
+                                        </template>
+                                    </ul>
+                                </div>
+                            </template>
+
+                            <br />
+
+                            <div>
+                                <lightning-button-group>
+
+                                    <!-- process selected file -->
+                                    <lightning-button label={label.processSelectedFile} onclick={handleSave}
+                                        disabled={noFileSelected}>
+                                    </lightning-button>
+
+                                    <lightning-button label={label.reset} onclick={handleReset}></lightning-button>
+
+                                </lightning-button-group>
+                            </div>
+
+                        </div>
+
+                        <div class="slds-col slds-size_6-of-12">
+                            <c-cart-upload-process-log richtext={processLog} show-process-log={showProcessLog}></c-cart-upload-process-log>
+                        </div>
+
+                    </div>
+
+                </template>
+
+                <template if:false={isCsvSelected}>
+
+                    <div class="slds-grid slds-p-bottom_medium">
+
+                        <div class="slds-col slds-size_6-of-12">
+
+                            <lightning-textarea name="textArea" value={textAreaValue} label={label.pasteInputHere}
+                                onchange={handleTextAreaChange} class="inputTextArea"></lightning-textarea>
+
+                            <div>
+                                <lightning-button-group>
+
+                                    <!-- process selected file -->
+                                    <lightning-button label={label.processText} onclick={handleTextSave}>
+                                    </lightning-button>
+
+                                    <lightning-button label={label.reset} onclick={handleTextReset}></lightning-button>
+
+                                </lightning-button-group>
+                            </div>
+
+                        </div>
+
+                        <div class="slds-col slds-size_6-of-12">
+                            <c-cart-upload-process-log show-process-log={showProcessLog} richtext={processLog}></c-cart-upload-process-log>
+                        </div>
+
+                    </div>
+
+                </template>
+
+            </div>
+
+        </lightning-accordion-section>
+
+    </lightning-accordion>
+
+</template>

@@ -1,0 +1,4 @@
+.slds-textarea {
+	height: 300px !important;
+    width: 300px;
+}

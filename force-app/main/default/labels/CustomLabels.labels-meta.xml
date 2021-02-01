@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CustomLabels xmlns="http://soap.sforce.com/2006/04/metadata">
+    <labels>
+        <fullName>B2B_Add_to_cart_batch_subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Add to cart batch subject</shortDescription>
+        <value>Add to cart batch log {0}</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Add_to_cart_details</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Add to cart details</shortDescription>
+        <value>Your items will be added to the cart asynchronously.  Check your email for updates.</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Add_to_cart_error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Add to cart error</shortDescription>
+        <value>Add to cart error</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Add_to_cart_in_process</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Add to cart in process</shortDescription>
+        <value>Add to cart in process</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Add_to_cart_processing_complete</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Add to cart processing complete</shortDescription>
+        <value>Processing complete</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Add_to_cart_subject</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Add to cart subject</shortDescription>
+        <value>B2B add to cart summary</value>
+    </labels>
+    <labels>
+        <fullName>B2B_CSV_file</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B CSV file</shortDescription>
+        <value>CSV file</value>
+    </labels>
+    <labels>
+        <fullName>B2B_CU_Cart_Upload_Component_Title</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B_CU_Cart_Upload_Component_Title</shortDescription>
+        <value>Cart Upload</value>
+    </labels>
+    <labels>
+        <fullName>B2B_CU_Invalid_SKUs_found</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B CU Invalid SKUs found</shortDescription>
+        <value>Invalid SKUs found</value>
+    </labels>
+    <labels>
+        <fullName>B2B_CU_Max_Upload_Rows_Exceeded</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B CU Max Upload Rows Exceeded</shortDescription>
+        <value>You may only upload a total of {0} rows.</value>
+    </labels>
+    <labels>
+        <fullName>B2B_CU_Please_correct_the_invalid_SKUs_and_resubmit</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B CU Please correct the invalid SKUs and resubmit</shortDescription>
+        <value>Please correct the invalid SKUs and resubmit</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Cart_Upload_Processing_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Cart Upload Processing Error</shortDescription>
+        <value>Processing Error</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Cart_Upload_Processing_options</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Cart Upload Processing options</shortDescription>
+        <value>Processing options</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Cart_Upload_please_wait</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Cart Upload please wait</shortDescription>
+        <value>Please wait...</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Close_Dialog</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Close Dialog</shortDescription>
+        <value>Close</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Email_Results</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Email Results</shortDescription>
+        <value>Email results</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Files_Selected</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Files Selected</shortDescription>
+        <value>File(s) selected</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Ignore_invalid_SKUs</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Ignore invalid SKUs</shortDescription>
+        <value>Ignore invalid SKUs</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Includes_header_row</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Includes header row</shortDescription>
+        <value>Includes header row</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Invalid_SKU</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Invalid SKU</shortDescription>
+        <value>Invalid SKU:</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Items_added_to_cart_successfully</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Items added to cart successfully</shortDescription>
+        <value>{0} item(s) added to cart successfully</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Items_not_added_to_cart</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Items not added to cart</shortDescription>
+        <value>{0} item(s) were not added to the cart</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Paste_your_input_here</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Paste your input here</shortDescription>
+        <value>Paste your input here</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Process_Selected_File</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Process Selected File</shortDescription>
+        <value>Process selected file</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Process_pasted_text</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Process pasted text</shortDescription>
+        <value>Process text</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Reset</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Reset</shortDescription>
+        <value>Reset</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Retrieving_Content</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Retrieving Content</shortDescription>
+        <value>Retrieving content...</value>
+    </labels>
+    <labels>
+        <fullName>B2B_SKU_is_not_valid</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B SKU is not valid</shortDescription>
+        <value>SKU is not valid</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Select_Files</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Select Files</shortDescription>
+        <value>Select a File</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Select_input_type</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Select input type</shortDescription>
+        <value>Select input type</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Show_Help_Dialog</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Show Help Dialog</shortDescription>
+        <value>Help</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Text_area</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Text area</shortDescription>
+        <value>Text area</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Text_area_no_text_found</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Text area no text found</shortDescription>
+        <value>No text found</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Total_Errors</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Total Errors</shortDescription>
+        <value>Total Errors:</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Total_items_processed</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Total items processed</shortDescription>
+        <value>Total items processed:</value>
+    </labels>
+    <labels>
+        <fullName>B2B_Upload_Processing_Error</fullName>
+        <language>en_US</language>
+        <protected>false</protected>
+        <shortDescription>B2B Upload Processing Error</shortDescription>
+        <value>Processing Error</value>
+    </labels>
+</CustomLabels>

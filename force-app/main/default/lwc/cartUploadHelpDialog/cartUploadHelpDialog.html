@@ -1,0 +1,42 @@
+<!-- 
+ * Copyright (c) 2021, salesforce.com, inc.
+ * All rights reserved.
+ * SPDX-License-Identifier: BSD-3-Clause
+ * For full license text, see the LICENSE file in the repo root or https://opensource.org/licenses/BSD-3-Clause
+-->
+<template>
+
+    <template if:true={isOpen}>
+
+        <!--Use "slds-m-around_xx-large" class to add standard X-Large padding to the component-->
+        <div style="height: 400px;">
+            <div class="slds-var-m-around_xx-large">
+
+                <section 
+                    role="dialog" 
+                    tabindex="-1" 
+                    aria-labelledby="modal-heading-01" 
+                    aria-modal="true" 
+                    aria-describedby="modal-content-id-1"
+                    class="slds-modal slds-fade-in-open slds-modal_medium">
+                    
+                    <div class="slds-modal__container">
+                        <div class="slds-modal__content slds-var-p-around_medium" id="modal-content-id-1" style="text-align: left;">
+                            
+                            <!-- content goes here -->
+                            <c-cart-upload-help-content content-id={contentId} content-type={contentType}></c-cart-upload-help-content>
+
+                        </div>
+                        <footer class="slds-modal__footer">
+                            <lightning-button label={label.closeDialog} onclick={handleCloseModal}>
+                            </lightning-button>
+                        </footer>
+                    </div>
+                </section>
+                <div class="slds-backdrop slds-backdrop_open"></div>
+                
+            </div>
+        </div>
+    </template>
+    
+</template>
