@@ -276,6 +276,11 @@ See the list of [Contributors][contributors-url] who participated in this projec
 
 If you would like to join these awesome people, please refer to [contributing.md](/CONTRIBUTING.md) for guidelines.
 
+## History ##
+
+- 1.1.2-1
+	* Initial release of managed package
+
 ## Acknowledgements
 
 Special thanks to:
