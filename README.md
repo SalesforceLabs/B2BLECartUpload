@@ -1,8 +1,4 @@
-<div>
-	<img align="right" width="150" src="images/qbranch_logo.gif">
-</div>
-
-# _[B2B LE Cart Upload](https://q-demo-components.herokuapp.com/#/demo-component/a012M00000iPSOTQA4/undefined)_
+# _[B2B LE Cart Upload]_
 
 #### _Enable users to add items to their cart using a text list or a CSV file_
 
@@ -50,8 +46,8 @@ Deploy the source:
 1. Clone this repository:
 
 ```
-git clone git@github.com:sfdc-qbranch/B2B-LE-Cart-Upload.git
-cd B2B-LE-Cart-Upload
+git clone git@github.com:sfdc-qbranch/B2BLECartUpload.git
+cd B2BLECartUpload
 ```
 
 2. Authorize with your org and provide it with an alias (OrgAlias):
@@ -292,7 +288,7 @@ Special thanks to:
 
 ## License
 
-[![License][license-shield]][license-url] Copyright © 2021 [Q Branch][author-url]
+[![License][license-shield]][license-url] Copyright © 2021 [Salesforce][author-url]
 
 <!--- Images -->
 
